@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AFB5A6;
+  }
+
+.circle {
+    height: 800px;
+    width: 100px;
+    border-radius: 250px;
+    background-color: #C59670;
+    position: fixed; 
+    top: -100vh;
+    left: -100vh;
+    pointer-events: none;
+    z-index: 99999999;
+  }
+
+ 
+  .color-waves {
+    width: 250vh;
+    height: 100vh;
+    background: linear-gradient(-15deg, #304530, #5A6A57, #AFB5A6, #5A6A57, #304530);
+    background-size: 300% 300%;
+    animation: waveAnimation 6s cubic-bezier(0.36, 0.89, 0.54, 0.16) infinite;
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+    }
+  }
+  
